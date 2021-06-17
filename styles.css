@@ -1,5 +1,12 @@
+
+body{
+    background-color: #fffbf7;
+    background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');
+}
+
 h1{
     color: rgba(114, 132, 167, 0.952);
+    text-align: center;;
 }
 
 h2{
@@ -14,7 +21,56 @@ button{
     background-color: #025157;
 }
 
-body{
-    background-color: #fffbf7;
-    background-image: url('https://ideakreativa.net/wp-content/uploads/2019/09/minimalismo-reglas-y-ejemplos-1.jpg');
+.header {
+    margin: 40px 20px 0 20px;
+    font-size: 0;
+    height: 45px;
+    font-family: sans-serif;
+  }
+
+li{
+    display: inline;
+}
+
+.header > * {
+    display: inline-block;
+    font-size: 16px;    
+    vertical-align: middle;
+}
+
+.logo{
+    width: 15%;
+}
+
+.navbar {
+    width: 70%;
+    text-align: center;
+    color: green;
+    color: #025157;
+}
+
+.navbar li {
+    margin: 0 25px ;
+}
+
+.action{
+    width: 15%;
+    text-align: right;
+    font-size: 14px;
+}
+
+.action a{
+    color: #67b54b ;
+}
+
+.actions > * {
+    margin: 0 10px;
+  }
+
+.action button{
+    color: #fff;
+    background-color: #67b54b;
+    padding: 12px 14px;
+    border-radius: 5px;
+
 }
