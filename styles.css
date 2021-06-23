@@ -1,22 +1,24 @@
-
-body{
+body {
     background-color: #eedecf;
+    margin: 0;
     /*background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');*/
 }
 
-h1{
+h1 {
     color: rgba(114, 132, 167, 0.952);
-    text-align: center;;
+    text-align: center;
+    ;
 }
 
-h2{
+h2 {
     color: #46484c;
 }
 
-p{
+p {
     color: #8b8b8bcc;
 }
-button{
+
+button {
     color: #fff;
     background-color: #025157;
 }
@@ -26,28 +28,27 @@ button{
     font-size: 0;
     height: 45px;
     font-family: sans-serif;
-  }
+}
 
-li{
+li {
     display: inline;
 }
 
-.fixed-header{
+.fixed-header {
     position: fixed;
-    background-color:  #eedecf;
+    background-color: #eedecf;
     top: 0;
     left: 0;
     right: 0;
-    
 }
 
-.header > * {
+.header>* {
     display: inline-block;
-    font-size: 16px;    
+    font-size: 16px;
     vertical-align: middle;
 }
 
-.logo{
+.logo {
     width: 15%;
 }
 
@@ -59,32 +60,31 @@ li{
 }
 
 .navbar li {
-    margin: 0 25px ;
+    margin: 0 25px;
 }
 
-.action{
+.action {
     width: 15%;
     text-align: right;
     font-size: 14px;
 }
 
-.action a{
-    color: #67b54b ;
+.action a {
+    color: #67b54b;
 }
 
-.actions > * {
+.actions>* {
     margin: 0 10px;
-  }
+}
 
-.action button{
+.action button {
     color: #fff;
     background-color: #67b54b;
     padding: 12px 14px;
     border-radius: 5px;
-
 }
 
-.promo{
+.promo {
     display: flex;
     width: 70%;
     margin: 100px auto;
@@ -92,21 +92,147 @@ li{
     gap: 20px;
 }
 
-.promo-video{
+.promo-video {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-.publicidad{
+.publicidad {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.publicidad-titulo{
-    color:#025157;
+.publicidad-titulo {
+    color: #025157;
 }
 
-.publicidad-texto{
+.publicidad-texto {
     color: #343434;
 }
+
+.postwork {
+    background-color: #a1d683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.postwork-info {
+    width: 70%;
+}
+
+.postwork-info h3 {
+    color: #025157;
+    font-size: 50px;
+    line-height: 61px;
+    font-family: serif;
+}
+
+.postwork-info p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.postwork-info button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+}
+
+.postwork-info img {
+    width: 500px;
+    max-width: 100%;
+}
+
+.postwork-tarjeta {
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.postwork-tarjeta-img {
+    position: relative;
+}
+
+.postwork-tarjeta-foto img {
+    width: 100%;
+    max-height: 16vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.postwork-tarjeta-logo {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postwork-tarjeta-logo img {
+    width: 100%;
+    max-height: 16vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.postwork-tarjeta-texto, .postwork-tarjeta-boton {
+    padding: 15px 25px;
+}
+
+.postwork-tarjeta-texto h4{
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.postwork-tarjeta-texto h5 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.postwork-tarjeta-texto-carrito {
+    display: flex;
+    align-items: center;
+    color: #828282;
+}
+
+.postwork-tarjeta-texto-carrito img {
+    width: 26px;
+    margin-right: 20px;
+}
+
+.postwork-tarjeta-boton {
+    margin-bottom: 20px;
+    background-color: unset;
+    border-top: unset;
+}
+
+.postwork-tarjeta-boton button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #025157;
+    color: #fff;
+}
+
