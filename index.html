@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@900&family=Open+Sans&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
@@ -38,40 +42,46 @@
     </section>
 
     <main>
+        <section class="introduccion">
+            <h1> Orci varius </h1>
+            <h2>Neque quisquam </h2>
+            <h3>Aliquam quam</h3>
+            <h4>Cras pulvinar</h4>
+            <h5>Fusce placerat mattis</h5>
+            <h6>Nulla vel augue nisl</h6>
 
-        <h1> Orci varius </h1>
-        <h2>Neque quisquam </h2>
-        <h3>Aliquam quam</h3>
-        <h4>Cras pulvinar</h4>
-        <h5>Fusce placerat mattis</h5>
-        <h6>Nulla vel augue nisl</h6>
+            <p><strong>Nulla sagittis pretium nibh eu accumsan. Ut sed ex sed sem sagittis scelerisque. Duis mollis
+                    vehicula</strong>
+                semper cursus, <b>quam est pulvinar dui,</b> et pretium dui dolor mattis felis. Suspendisse potenti.
+            </p>
 
-        <p><strong>Nulla sagittis pretium nibh eu accumsan. Ut sed ex sed sem sagittis scelerisque. Duis mollis
-                vehicula</strong>
-            semper cursus, <b>quam est pulvinar dui,</b> et pretium dui dolor mattis felis. Suspendisse potenti.
-        </p>
+        </section>
+
+        <section class="formulario-reto">
+            <br>
+            <h2>Formulario Reto3</h2>
+            <form action="Formulario Prueba">
+                <label for="nombre">Nombre:</label> <br>
+                <input type="text" id="name" name="fname" required placeholder="Nombre"> <br>
+                <label for="apellido">Apellido:</label> <br>
+                <input type="text" id="lastname" name="lastname" placeholder="Apellido"> <br>
+                <label for="edad">Edad:</label> <br>
+                <input type="number" id="age" name="age" placeholder="Edad" min="18" max="35"> <br>
+                <label for="email">Correo electrónico:</label> <br>
+                <input type="email" id="email" name="email" placeholder="Correo"> <br>
+                <label for="contraseña">Contraseña:</label> <br>
+                <input type="password" id="password" name="password" placeholder="Contraseña"> <br> <br>
+                <button type="submit">Enviar &#10140; </button>
+            </form>
+            <br>
+
+        </section>
+        <section class="capterra-img">
+            <img src="capterra.png" alt="imagen de Capterra">
+        </section>
+
 
     </main>
-
-    <br>
-    <h2>Formulario Reto3</h2>
-
-    <form action="Formulario Prueba">
-        <label for="nombre">Nombre:</label> <br>
-        <input type="text" id="name" name="fname" required placeholder="Nombre"> <br>
-        <label for="apellido">Apellido:</label> <br>
-        <input type="text" id="lastname" name="lastname" placeholder="Apellido"> <br>
-        <label for="edad">Edad:</label> <br>
-        <input type="number" id="age" name="age" placeholder="Edad" min="18" max="35"> <br>
-        <label for="email">Correo electrónico:</label> <br>
-        <input type="email" id="email" name="email" placeholder="Correo"> <br>
-        <label for="contraseña">Contraseña:</label> <br>
-        <input type="password" id="password" name="password" placeholder="Contraseña"> <br> <br>
-
-        <button type="submit">Enviar &#10140; </button>
-    </form>
-    <br>
-    <img src="capterra.png" alt="imagen de Capterra">
 
     <section class="promo">
         <div class="promo-video">
@@ -85,7 +95,7 @@
                 alt="flechita al video">
         </div>
         <article class="publicidad">
-            <h1 class="publicidad-titulo"> Publish to your blog in minutes, not hours.</h1>
+            <h2 class="publicidad-titulo"> Publish to your blog in minutes, not hours.</h2>
             <p class="publicidad-texto">
                 Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have
                 hours to create content that may or may not work. With Matcha, instantly publish from our library of
@@ -106,7 +116,7 @@
 
     <section class="postwork">
         <article class="postwork-info">
-            <h3>Growing ecommerce brands rely on Matcha.</h3>
+            <h2>Growing ecommerce brands rely on Matcha.</h2>
             <p>
                 Are you tired of wasting time publishing blog articles to only see a
                 trickle of traffic and no impact on sales? Join hundreds of business
@@ -153,7 +163,7 @@
         <article class="feature-art">
             <div class="feature-info">
                 <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_publish.png" alt="logo1">
-                <h2>Fill your blog with engaging articles.</h2>
+                <h4>Fill your blog with engaging articles.</h4>
                 <p>Publish to your blog in less time than it takes to drink your morning coffee.</p>
                 <a href="">
                     Publish instantly &#10140;
@@ -167,7 +177,7 @@
         <article class="feature-art">
             <div class="feature-info">
                 <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_site_traffic.png" alt="logo2">
-                <h2>Attract and engage more website visitors.</h2>
+                <h4>Attract and engage more website visitors.</h4>
                 <p>Enhance your email, social media channels, and paid ads with content from Matcha.</p>
                 <a href="">
                     Get more site traffic &#10140;
@@ -182,7 +192,7 @@
         <article class="feature-art">
             <div class="feature-info">
                 <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_capture.png" alt="logo3">
-                <h2>Capture more emails with locked content.</h2>
+                <h4>Capture more emails with locked content.</h4>
                 <p>Convert 10x more of your traffic into subscribers and nurture them to a sale.</p>
                 <a href="">
                     Grow your email list faster &#10140;
@@ -197,7 +207,7 @@
         <article class="feature-art">
             <div class="feature-info">
                 <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_roi.png" alt="logo4">
-                <h2>Optimize your blog’s performance.</h2>
+                <h4>Optimize your blog’s performance.</h4>
                 <p>See what content delivers the most traffic, engagement, email subscribers, and sales.</p>
                 <a href="">
                     See content’s ROI &#10140;
@@ -205,9 +215,73 @@
             </div>
             <div class="feature-image">
                 <img class="feature-img" src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_roi.png"
-                    alt="info 3">
+                    alt="info 4">
             </div>
         </article>
+    </section>
+
+
+    <section class="postwork-s4">
+        <article class="postwork-s4-text">
+
+            <h2>How does Matcha wok?</h2>
+            <p>Your blog can be so much more than window dressing. Use Matcha’s <span>simple formula</span> to transform your blog into an ecommerce growth engine.</p>
+            <button>Explore the Platform</button>
+        </article>
+
+        <div class="articulos-grid">
+            <article class="postwork-s4-individual">
+                <div class="postwork-s4-img">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-publish.png" alt="imagen principal" class="postwork-s4-img-principal">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_content.png" alt="imagen secundaria" class="postwork-s4-img-secundaria">
+
+                </div>
+                <div class="postwork-s4-info">
+                    
+                <h3>Publish</h3>
+                <p>Effortlessly fill your blog with content that shoppers want to read.</p>
+                <a href=""> Publish instantly &#10140;</a>
+                </div>
+            </article>
+            <article class="postwork-s4-individual">
+                <div class="postwork-s4-img">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-promote.png" alt="imagen principal" class="postwork-s4-img-principal">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_channels.png" alt="imagen secundaria" class="postwork-s4-img-secundaria">
+
+                </div>
+                <div class="postwork-s4-info">
+                    
+                <h3>Promote</h3>
+                <p>Use articles in email, social, and content ads to attract more site visitors.</p>
+                <a href=""> Drrive morer site visitors &#10140;</a>
+                </div>
+            </article>
+            <article class="postwork-s4-individual">
+                <div class="postwork-s4-img">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-capture.png" alt="imagen principal" class="postwork-s4-img-principal">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_funnel.png" alt="imagen secundaria" class="postwork-s4-img-secundaria">
+
+                </div>
+                <div class="postwork-s4-info">
+                    
+                <h3>Capture</h3>
+                <p>Turn readers into email subscribers and subscribers into customers.</p>
+                <a href=""> Grow your email list &#10140;</a>
+                </div>
+            </article>
+            <article class="postwork-s4-individual">
+                <div class="postwork-s4-img">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-measure.png" alt="imagen principal" class="postwork-s4-img-principal">
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_chart.png" alt="imagen secundaria" class="postwork-s4-img-secundaria">
+                </div>
+                <div class="postwork-s4-info">
+                    
+                <h3>Measure</h3>
+                <p>See what’s working and what’s not to easily optimize for more traffic, email subscribers, and sales.</p>
+                <a href=""> Track performance &#10140;</a>
+                </div>
+            </article>
+        </div>
     </section>
 
 </body>
