@@ -1,8 +1,6 @@
-:root
-{
+:root {
     --fuenteTitulos: 'Alegreya', serif;
     --fuentePrincipal: 'Open Sans', sans-serif;
-
 }
 
 body {
@@ -15,15 +13,20 @@ h1, h2, h3 {
     font-family: var(--fuenteTitulos);
     color: #025157;
 }
+
+h1 {
+    font-size: 60px;
+}
+
 h4, h5, h6, a, p {
     font-family: var(--fuentePrincipal);
 }
+
 p {
     color: #7e7e7e;
 }
 
 button {
-    
     background-color: #025157;
     color: #fff;
     border: none;
@@ -31,7 +34,6 @@ button {
     border-bottom-left-radius: 0;
     padding: 6px 20px;
     margin-left: -10px;
-    
 }
 
 .header {
@@ -39,7 +41,6 @@ button {
     font-size: 0;
     height: 45px;
     font-family: var(--fuentePrincipal);
-   
 }
 
 li {
@@ -50,7 +51,6 @@ main {
     margin-top: 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
 }
 
 .fixed-header {
@@ -103,27 +103,34 @@ main {
     padding: 12px 14px;
     border-radius: 5px;
 }
-.introduccion >*{
+
+.introduccion>* {
     margin: 10px 0;
     text-align: center;
     width: 400px;
     max-width: 100%;
-
 }
 
-.introduccion{
+.introduccion {
     justify-content: center;
 }
+
 .formulario-reto, .introduccion {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .capterra-img {
     grid-column: 1/3;
     margin-top: 20px;
     display: flex;
     justify-content: center;
+}
+
+.capterra-img img {
+    width: 500px;
+    max-width: 100%;
 }
 
 .promo {
@@ -138,12 +145,18 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 60%;
+}
+
+.promo-video video {
+    width: 500px;
+    max-width: 100%;
 }
 
 .publicidad {
     font-family: Arial, Helvetica, sans-serif;
+    width: 40%;
 }
-
 
 .publicidad-texto {
     color: #343434;
@@ -229,7 +242,7 @@ main {
     padding: 15px 25px;
 }
 
-.postwork-tarjeta-texto h4{
+.postwork-tarjeta-texto h4 {
     color: #025157;
     font-size: 18px;
     font-weight: 600;
@@ -273,8 +286,6 @@ main {
     color: #fff;
 }
 
-
-
 .features {
     display: grid;
     /* grid-template-columns: 200px 300px; */
@@ -288,7 +299,7 @@ main {
 }
 
 .feature-art {
-    background-color:white;
+    background-color: white;
     margin: 10px;
     height: 100%;
     border: 1px solid #dadada;
@@ -311,19 +322,20 @@ main {
     font-size: 24px;
     color: #343434;
     font-weight: 400;
-    margin:  10px 0;
-   
+    margin: 10px 0;
 }
 
-.feature-info p{
+.feature-info p {
     font-size: 16px;
 }
-.feature-info a, .postwork-s4-info a{
+
+.feature-info a, .postwork-s4-info a {
     font-size: 16px;
     color: #67b54b;
     font-weight: 600;
     text-decoration: none;
 }
+
 .feature-img {
     height: 100%;
 }
@@ -336,18 +348,15 @@ main {
     height: 80%;
 }
 
-.postwork-s4{
+.postwork-s4 {
     padding: 5% 10%;
     text-align: center;
-    
-    
 }
 
-.postwork-s4-text h2{
+.postwork-s4-text h2 {
     font-size: 50px;
     margin-bottom: 10px;
 }
-
 
 .postwork-s4-text p {
     line-height: 1.5;
@@ -360,6 +369,7 @@ main {
 .postwork-s4-text p span {
     color: #67b54b;
 }
+
 .postwork-s4-text button {
     margin-top: 20px;
     border-radius: 5px;
@@ -372,7 +382,6 @@ main {
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
 }
 
 .postwork-s4-individual {
@@ -384,16 +393,17 @@ main {
     text-align: left;
 }
 
-.postwork-s4-img{
+.postwork-s4-img {
     position: relative;
 }
 
-.postwork-s4-img-principal{
+.postwork-s4-img-principal {
     width: 100%;
     height: 100%;
     vertical-align: middle;
     height: 350px;
 }
+
 .postwork-s4-img-secundaria {
     position: absolute;
     top: 25px;
@@ -401,19 +411,127 @@ main {
     width: 21px;
 }
 
-
-.postwork-s4-info{
+.postwork-s4-info {
     padding: 25px;
 }
 
-.postwork-s4-info  p {
+.postwork-s4-info p {
     font-size: 15px;
     line-height: 1.5;
     color: #46484c;
     height: 90px;
 }
+
 .postwork-s4-info h3 {
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 10px;
 }
+
+/** dispositivos móviles en vista viewport (vertical) */
+
+@media (max-width: 575px) {
+    
+    .navbar, .action {
+        display: none;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .postwork-info h2, .postwork-s4-text h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .introduccion * {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    main {
+        margin-top: 70px;
+        grid-template-columns: 1fr;
+    }
+
+    .capterra-img {
+        grid-column: 1/2;
+        max-width: 90%;
+    }
+
+    .capterra-img img {
+        width: 500px;
+        max-width: 90%;
+    }
+
+    .promo {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .promo-video video, .promo-video, .publicidad {
+        width: 100%;
+    }
+    
+    .formulario-reto, .introduccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .postwork {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .postwork-info {
+        width: 90%;
+    }
+
+    .postwork-tarjeta-foto img {
+        max-height: 40%;
+    }
+
+    .features {
+        height: 1600px;
+        grid-template: repeat(4, 1fr) / 1fr;
+    }
+
+    .feature-info {
+        padding: 10px;
+    }
+    
+    .feature-info h4 {
+        font-size: 18px;
+    }
+
+    .articulos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-image{
+        right: -20px;
+    }
+
+
+    .postwork-s4-individual {
+        margin-bottom: 20px;
+    }
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/** dispositivos medianos (tablets) */
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/** dispositivos grandes (desktops) */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+
+@media (min-width: 1200px) {}
