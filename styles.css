@@ -24,6 +24,7 @@ h4, h5, h6, a, p {
 
 p {
     color: #7e7e7e;
+    text-align: justify;
 }
 
 button {
@@ -35,12 +36,28 @@ button {
     padding: 6px 20px;
     margin-left: -10px;
 }
+.boton-experimental, .list-group-item.active{
+    background-color: #025157;
+    color: #fff;
+}
+
+.row {
+    margin-bottom: 30px;
+    background-color:#b7c0a8;
+    padding: 2%;
+    font-family: var(--fuentePrincipal);
+}
+.jumbotron {
+    margin-top: 30px;
+}
 
 .header {
+    position: relative;
     margin: 20px 20px 20px 20px;
     font-size: 0;
     height: 45px;
     font-family: var(--fuentePrincipal);
+
 }
 
 li {
@@ -48,7 +65,7 @@ li {
 }
 
 main {
-    margin-top: 200px;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -59,6 +76,7 @@ main {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2000;
 }
 
 .header>* {
@@ -72,7 +90,8 @@ main {
 }
 
 .navbar {
-    width: 70%;
+    /* width: 70%; */
+    
     text-align: center;
     color: green;
     color: #025157;
@@ -83,7 +102,7 @@ main {
 }
 
 .action {
-    width: 15%;
+    /* width: 15%; */
     text-align: right;
     font-size: 14px;
 }
@@ -431,10 +450,10 @@ main {
 /** dispositivos móviles en vista viewport (vertical) */
 
 @media (max-width: 575px) {
-    
+/*     
     .navbar, .action {
         display: none;
-    }
+    } */
 
     h1 {
         font-size: 30px;
@@ -517,7 +536,31 @@ main {
 
     .postwork-s4-individual {
         margin-bottom: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
     }
+
+    .postwork-s4 {
+        padding: 0;
+    }
+
+    .postwork-s4-info {
+        padding: 10px 0px 25px 10px;
+    }
+
+    .postwork-s4-info h3 {
+        margin-top: 45px;
+    }
+    
+    .postwork-s4-img {
+        position: initial;
+        display: flex;
+        align-items: center;
+    }
+
+    .postwork-s4-img-principal {
+        height: auto;
 }
 
 /** dispositivos pequeños en vista landscape (horizontal) */
