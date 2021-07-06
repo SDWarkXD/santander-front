@@ -36,17 +36,21 @@ button {
     padding: 6px 20px;
     margin-left: -10px;
 }
-.boton-experimental, .list-group-item.active{
+
+.boton-experimental, .list-group-item.active {
     background-color: #025157;
     color: #fff;
 }
 
+.row-pruebas {
+    background-color: #b7c0a8;
+}
 .row {
     margin-bottom: 30px;
-    background-color:#b7c0a8;
     padding: 2%;
     font-family: var(--fuentePrincipal);
 }
+
 .jumbotron {
     margin-top: 30px;
 }
@@ -57,7 +61,6 @@ button {
     font-size: 0;
     height: 45px;
     font-family: var(--fuentePrincipal);
-
 }
 
 li {
@@ -91,7 +94,6 @@ main {
 
 .navbar {
     /* width: 70%; */
-    
     text-align: center;
     color: green;
     color: #025157;
@@ -447,120 +449,99 @@ main {
     margin-bottom: 10px;
 }
 
+
+
 /** dispositivos móviles en vista viewport (vertical) */
 
 @media (max-width: 575px) {
-/*     
+    /*     
     .navbar, .action {
         display: none;
     } */
-
     h1 {
         font-size: 30px;
     }
-
     .postwork-info h2, .postwork-s4-text h2 {
         font-size: 25px;
         line-height: 35px;
     }
-
     .introduccion * {
         width: 100%;
         max-width: 90%;
     }
-
     main {
         margin-top: 70px;
         grid-template-columns: 1fr;
     }
-
     .capterra-img {
         grid-column: 1/2;
         max-width: 90%;
     }
-
     .capterra-img img {
         width: 500px;
         max-width: 90%;
     }
-
     .promo {
         flex-direction: column;
         width: 90%;
     }
-
     .promo-video video, .promo-video, .publicidad {
         width: 100%;
     }
-    
     .formulario-reto, .introduccion {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .postwork {
         flex-direction: column;
         padding: 5%;
     }
-
     .postwork-info {
         width: 90%;
     }
-
     .postwork-tarjeta-foto img {
         max-height: 40%;
     }
-
     .features {
         height: 1600px;
         grid-template: repeat(4, 1fr) / 1fr;
     }
-
     .feature-info {
         padding: 10px;
     }
-    
     .feature-info h4 {
         font-size: 18px;
     }
-
     .articulos-grid {
         grid-template-columns: 1fr;
     }
-
-    .feature-image{
+    .feature-image {
         right: -20px;
     }
-
-
     .postwork-s4-individual {
         margin-bottom: 20px;
         display: flex;
         flex-direction: row-reverse;
         position: relative;
     }
-
     .postwork-s4 {
         padding: 0;
     }
-
     .postwork-s4-info {
         padding: 10px 0px 25px 10px;
     }
-
     .postwork-s4-info h3 {
         margin-top: 45px;
     }
-    
     .postwork-s4-img {
         position: initial;
         display: flex;
         align-items: center;
     }
-
     .postwork-s4-img-principal {
         height: auto;
+    }
 }
 
 /** dispositivos pequeños en vista landscape (horizontal) */
